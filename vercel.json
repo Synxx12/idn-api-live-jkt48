@@ -1,19 +1,14 @@
 {
-  "functions": {
-    "api/idnlives/*": {
-      "runtime": "nodejs16"
-    }
-  },
+  "version": 2,
+  "builds": [{ "src": "src/**/*.js", "use": "@now/node" }],
   "routes": [
     {
-      "src": "/api/idnlives/jkt48",
-      "dest": "/api/idnlives"
-    }
-  ],
-  "builds": [
+      "src": "/api/jkt48",
+      "dest": "src/routes/routes.js"
+    },
     {
-      "src": "src/**/*.js",
-      "use": "@vercel/node"
+      "src": "/(.*)",
+      "dest": "src/index.js"
     }
   ]
 }
