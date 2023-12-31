@@ -1,14 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/api/idnlives",
+      "src": "/api/idnlives/(.*)",
       "dest": "/index.js"
     },
     {
