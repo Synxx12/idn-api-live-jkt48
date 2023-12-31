@@ -8,10 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/api/jkt48",
-      "dest": "src/routes/routes.js"
-    },
-    {
       "src": "/(.*)",
       "dest": "src/index.js"
     }
