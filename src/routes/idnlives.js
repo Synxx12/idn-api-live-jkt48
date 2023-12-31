@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { filterIDNLivesByUsernames } = require("../utils/idnlivesUtils");
 
-const allowedUsernames = [
+const jkt48Usernames = [
   "jkt48_freya",
   "jkt48_ashel",
   "jkt48_amanda",
@@ -46,12 +46,12 @@ const allowedUsernames = [
   "jkt48_jeane",
 ];
 
-router.get("/", async (req, res) => {
+router.get("/jkt48", async (req, res) => {
   try {
-    const filteredData = await filterIDNLivesByUsernames(allowedUsernames);
+    const filteredData = await filterIDNLivesByUsernames(jkt48Usernames);
     res.json(filteredData);
   } catch (error) {
-    console.error("Error handling request:", error);
+    console.error("Error handling JKT48 request:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });

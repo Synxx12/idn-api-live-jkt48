@@ -1,11 +1,20 @@
 const express = require("express");
+const cors = require("cors");
 const idnlivesRouter = require("./src/routes/idnlives");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use("/api/idnlives/jkt48", idnlivesRouter);
+// Use CORS middleware
+app.use(cors());
 
+// Use middleware to parse JSON requests
+app.use(express.json());
+
+// Use routes
+app.use("/api/idnlives", idnlivesRouter);
+
+// Start the server
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
