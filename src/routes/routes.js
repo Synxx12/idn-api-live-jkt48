@@ -49,6 +49,7 @@ const jkt48Usernames = [
 router.get("/jkt48", async (req, res) => {
   try {
     const filteredData = await filterIDNLivesByUsernames(jkt48Usernames);
+
     res.json(filteredData);
   } catch (error) {
     console.error("Error handling JKT48 request:", error);
