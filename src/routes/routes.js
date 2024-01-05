@@ -50,10 +50,14 @@ router.get("/jkt48", async (req, res) => {
   try {
     const filteredData = await filterIDNLivesByUsernames(jkt48Usernames);
 
-    res.json(filteredData);
+    if (filteredData.length === 0) {
+      res.json([]);
+    } else {
+      res.json(filteredData);
+    }
   } catch (error) {
-    console.error("Error handling JKT48 request:", error);
-    res.status(500);
+    console.error("Error fetching IDN lives:", error);
+    res.status(500).json({ error: "Failed to fetch IDN lives" });
   }
 });
 
