@@ -53,7 +53,7 @@ router.get("/jkt48", async (req, res) => {
     res.json(filteredData);
   } catch (error) {
     console.error("Error handling JKT48 request:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500);
   }
 });
 

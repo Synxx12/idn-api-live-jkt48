@@ -10,9 +10,7 @@ app.use("/api", routes);
 
 app.get("/", (req, res) => {
   res.send({
-    message: "Welcome To JKT48 WEB API",
-    author: "https://github.com/Synxx12",
-    repository: "https://github.com/Synxx12/JKT48-Scrape.git",
+    message: "Welcome To JKT48 Idn Live API",
   });
 });
 
