@@ -43,7 +43,7 @@ Repositori ini berisi kode sumber untuk API yang menyediakan informasi live stre
 
 ## Lisensi
 
-Dilisensikan di bawah Lisensi MIT - lihat [LISENSI](LISENSI) untuk detail lebih lanjut.
+Dilisensikan di bawah Lisensi MIT - lihat [LISENSI](LICENSE.md) untuk detail lebih lanjut.
 ```
 MIT License
 
