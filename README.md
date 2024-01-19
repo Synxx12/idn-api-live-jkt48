@@ -1,5 +1,3 @@
-Berdasarkan informasi bahwa endpoint hanya `https://idn-api-live-jkt48.vercel.app/api/jkt48`, berikut adalah versi README yang lebih sederhana:
-
 ```markdown
 # IDN API Live JKT48
 
