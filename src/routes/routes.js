@@ -49,7 +49,7 @@ const jkt48Usernames = [
   "jkt48_aralie",
   "jkt48_delynn",
   "jkt48_shasa",
-  "jkt48_lana,
+  "jkt48_lana",
   "jkt48_erine",
   "jkt48_fritzy",
   "jkt48_lily",
