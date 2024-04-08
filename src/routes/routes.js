@@ -45,6 +45,23 @@ const jkt48Usernames = [
   "jkt48_anindya",
   "jkt48_jeane",
   "jkt48-official",
+  "jkt48_nala",
+  "jkt48_aralie",
+  "jkt48_delynn",
+  "jkt48_shasa",
+  "jkt48_lana,
+  "jkt48_erine",
+  "jkt48_fritzy",
+  "jkt48_lily",
+  "jkt48_trisha",
+  "jkt48_moreen",
+  "jkt48_levi",
+  "jkt48_nayla",
+  "jkt48_nachia",
+  "jkt48_oline",
+  "jkt48_regie",
+  "jkt48_ribka",
+  "jkt48_kimmy"
 ];
 
 router.get("/jkt48", async (req, res) => {
